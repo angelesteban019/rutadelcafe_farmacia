@@ -9,7 +9,7 @@
 			<form action="" id="manage-customer">
 				<div class="card">
 					<div class="card-header">
-						   Formulario Cliente
+						   Formulario de Cliente
 				  	</div>
 					<div class="card-body">
 							<input type="hidden" name="id">
@@ -31,7 +31,7 @@
 					<div class="card-footer">
 						<div class="row">
 							<div class="col-md-12">
-								<button class="btn btn-sm btn-primary col-sm-3 offset-md-3"> Guarda</button>
+								<button class="btn btn-sm  col-sm-3 offset-md-3" style="background:#93ED66; border:none;"> Guarda</button>
 								<button class="btn btn-sm btn-default col-sm-3" type="button" onclick="$('#manage-customer').get(0).reset()"> Cancela</button>
 							</div>
 						</div>
@@ -68,7 +68,7 @@
 										<p><small>Dirección : <b><?php echo $row['address'] ?></b></small></p>
 									</td>
 									<td class="text-center">
-										<button class="btn btn-sm btn-primary edit_customer" type="button" data-id="<?php echo $row['id'] ?>" data-name="<?php echo $row['name'] ?>" data-contact="<?php echo $row['contact'] ?>" data-address="<?php echo $row['address'] ?>" >Editar</button>
+										<button class="btnE btn-sm edit_customer" type="button" data-id="<?php echo $row['id'] ?>" data-name="<?php echo $row['name'] ?>" data-contact="<?php echo $row['contact'] ?>" data-address="<?php echo $row['address'] ?>" >Editar</button>
 										<button class="btn btn-sm btn-danger delete_customer" type="button" data-id="<?php echo $row['id'] ?>">Eliminar</button>
 									</td>
 								</tr>
@@ -85,7 +85,11 @@
 
 </div>
 <style>
-	
+	.btnE{
+		background:#FEC63B;
+		border:none;
+		color:white;
+	}
 	td{
 		vertical-align: middle !important;
 	}

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <link rel="icon" href="assets/img/logo3.png">
   <title>Drogueria La Ruta Del Café</title>
  	
 
@@ -83,14 +83,14 @@ $query = $conn->query("SELECT * FROM system_settings limit 1")->fetch_array();
   				<div class="card-body">
   					<form id="login-form" >
   						<div class="form-group">
-  							<label for="username" class="control-label">Nombre de Usuario</label>
+  							<label for="username" class="control-label">Nombre de usuario</label>
   							<input type="text" id="username" name="username" class="form-control">
   						</div>
   						<div class="form-group">
   							<label for="password" class="control-label">Contraseña</label>
   							<input type="password" id="password" name="password" class="form-control">
   						</div>
-  						<center><button  class="btn-sm btn-block btn-wave col-md-4 btn-primary">Iniciar Sesión</button></center>
+  						<center><button  class="btn-sm btn-block btn-wave col-md-4">INICIAR SESIÓN</button></center>
   					</form>
   				</div>
   			</div>

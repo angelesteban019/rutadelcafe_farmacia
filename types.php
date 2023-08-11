@@ -5,6 +5,11 @@
 		color:black;
 		border: none;
 	}
+	.btnE{
+		background:#FEC63B;
+		border:none;
+		color:white;
+	}
 	</style>
 <div class="container-fluid">
 	
@@ -15,7 +20,7 @@
 			<form action="" id="manage-category">
 				<div class="card">
 					<div class="card-header">
-						   Formulario - Tipo Medicina
+						   Formulario de Tipo de Medicina
 				  	</div>
 					<div class="card-body">
 							<input type="hidden" name="id">
@@ -29,7 +34,7 @@
 					<div class="card-footer">
 						<div class="row">
 							<div class="col-md-12">
-								<button class="btnSave btn-sm btn-primary col-sm-3 offset-md-3">Guarda</button>
+								<button class="btnSave btn-sm  col-sm-3 offset-md-3">Guarda</button>
 								<button class="btn btn-sm btn-default col-sm-3" type="button" onclick="$('#manage-category').get(0).reset()">Cancela</button>
 							</div>
 						</div>
@@ -67,7 +72,7 @@
 										<?php echo $row['name'] ?>
 									</td>
 									<td class="text-center">
-										<button class="btn btn-sm btn-primary edit_cat" type="button" data-id="<?php echo $row['id'] ?>" data-name="<?php echo $row['name'] ?>" >Editar</button>
+										<button class="btnE btn-sm edit_cat" type="button" data-id="<?php echo $row['id'] ?>" data-name="<?php echo $row['name'] ?>" >Editar</button>
 										<button class="btn btn-sm btn-danger delete_cat" type="button" data-id="<?php echo $row['id'] ?>">Eliminar</button>
 									</td>
 								</tr>

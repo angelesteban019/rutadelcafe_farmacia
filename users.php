@@ -6,7 +6,7 @@
 	
 	<div class="row">
 	<div class="col-lg-12">
-			<button class="btn btn-primary float-right btn-sm" id="new_user"><i class="fa fa-plus"></i> Nuevo Usuario</button>
+			<button style="background:#93ED66; border:none;" class="btn  float-right btn-sm" id="new_user"><i class="fa fa-plus"></i> Nuevo Usuario</button>
 	</div>
 	</div>
 	<br>
@@ -43,8 +43,8 @@
 				 	<td>
 				 		<center>
 								<div class="btn-group">
-								  <button type="button" class="btn btn-primary">Acción</button>
-								  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								  <button type="button" class="btna "style="background:#93ED66; border:none; color:white;">Acción</button>
+								  <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:#93ED66; border:none;">
 								    <span class="sr-only">Menu Desplegable</span>
 								  </button>
 								  <div class="dropdown-menu">
@@ -68,10 +68,10 @@
 <script>
 	
 $('#new_user').click(function(){
-	uni_modal('New User','manage_user.php')
+	uni_modal('Nuevo Usuario','manage_user.php')
 })
 $('.edit_user').click(function(){
-	uni_modal('Edit User','manage_user.php?id='+$(this).attr('data-id'))
+	uni_modal('Editar usuarios','manage_user.php?id='+$(this).attr('data-id'))
 })
 $('.delete_user').click(function(){
 		_conf("Está seguro de eliminar a este usuario?","delete_user",[$(this).attr('data-id')])

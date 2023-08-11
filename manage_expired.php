@@ -119,8 +119,8 @@ if(isset($_GET['iid'])){
 		<td>
 			<input type="hidden" name="inv_id[]" value="">
 			<input type="hidden" name="product_id[]" value="">
-			<p class="pname">Name: <b>product</b></p>
-			<p class="pdesc"><small><i>Description: <b>Description</b></i></small></p>
+			<p class="pname">Nombre: <b>product</b></p>
+			<p class="pdesc"><small><i>Descripción: <b>Description</b></i></small></p>
 		</td>
 		<td>
 			<input type="number" min="1" step="any" name="qty[]" value="" class="text-right">
@@ -167,7 +167,7 @@ if(isset($_GET['iid'])){
 		$('#pay_modal').modal('show')
 	})
 	$('#search_prod').click(function(){
-		uni_modal("Find Available Product.","find_product.php","large")
+		uni_modal("Buscar producto.","find_product.php","large")
 	})
 	$(document).ready(function(){
 		if('<?php echo isset($id) ?>' == 1){

@@ -8,6 +8,20 @@
 			.btn{
 				background:#93ED66;
 			}
+			.btnE{
+		background:#FEC63B;
+		border:none;
+		color:white;
+	}
+	.btnE:hover, .btnE:focus {
+		color: white; /* Cambiar el color del texto al pasar el mouse o enfocar */
+	}
+	.btnE:hover {
+		text-decoration: none;
+	}
+	.btnb:hover {
+		text-decoration: none;
+	}
 			</style>
 		<div class="row">
 			<div class="col-md-12">
@@ -40,10 +54,10 @@
 									<td class="text-center"><?php echo $i++ ?></td>
 									<td class=""><?php echo date("M d, Y",strtotime($row['date_added'])) ?></td>
 									<td class=""><?php echo $row['ref_no'] ?></td>
-									<td class=""><?php echo isset($sup_arr[$row['supplier_id']])? $sup_arr[$row['supplier_id']] :'N/A' ?></td>
+									<td class=""><?php echo isset($sup_arr[$row['supplier_id']])? $sup_arr[$row['supplier_id']] :'Proovedor' ?></td>
 									<td class="text-center">
-										<a class=" btn-sm btn-primary" href="index.php?page=manage_receiving&id=<?php echo $row['id'] ?>">Editar</a>
-										<a class=" btn-sm btn-danger delete_receiving" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>">Eliminar</a>
+										<a class="btnE btn-sm" href="index.php?page=manage_receiving&id=<?php echo $row['id'] ?>">Editar</a>
+										<a class="btnb btn-sm btn-danger delete_receiving" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>">Eliminar</a>
 									</td>
 								</tr>
 							<?php endwhile; ?>

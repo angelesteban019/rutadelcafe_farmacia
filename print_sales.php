@@ -10,7 +10,7 @@ if(isset($_GET['id'])){
 		$cname = $conn->query("SELECT * FROM customer_list where id = $customer_id ");
 		$cname = $cname->num_rows > 0 ? $cname->fetch_array()['name']: "Guest";
 	}else{
-		$cname = "Guest";
+		$cname = "Cliente" ;
 	}
 }
 $product = $conn->query("SELECT * FROM product_list  order by name asc");
@@ -121,7 +121,7 @@ $product = $conn->query("SELECT * FROM product_list  order by name asc");
 								<td width="20%" class="bbottom"><?php echo date("Y-m-d",strtotime($date_updated)) ?></td>
 							</tr>
 							<tr>
-								<td width="20%" class="text-right">Numero de Referencia :</td>
+								<td width="20%" class="text-right">Numero de referencia :</td>
 								<td width="80%" class="bbottom" colspan="3"><?php echo $ref_no ?></td>
 							</tr>
 						</table>

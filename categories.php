@@ -5,6 +5,11 @@
 		color:black;
 		border: none;
 	}
+	.btnE{
+		background:#FEC63B;
+		border:none;
+		color:white;
+	}
 	</style>
 
 <div class="container-fluid">
@@ -16,7 +21,7 @@
 			<form action="" id="manage-category">
 				<div class="card">
 					<div class="card-header">
-						    Formulario - Categoria Medicina
+					Formulario de Categoría de Medicina
 				  	</div>
 					<div class="card-body">
 							<input type="hidden" name="id">
@@ -68,7 +73,7 @@
 										<?php echo $row['name'] ?>
 									</td>
 									<td class="text-center">
-										<button class="btn btn-sm btn-primary edit_cat" type="button" data-id="<?php echo $row['id'] ?>" data-name="<?php echo $row['name'] ?>" >Editar</button>
+										<button class="btnE btn-sm  edit_cat" type="button" data-id="<?php echo $row['id'] ?>" data-name="<?php echo $row['name'] ?>" >Editar</button>
 										<button class="btn btn-sm btn-danger delete_cat" type="button" data-id="<?php echo $row['id'] ?>">Eliminar</button>
 									</td>
 								</tr>

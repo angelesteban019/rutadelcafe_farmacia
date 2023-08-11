@@ -25,10 +25,10 @@ foreach($user->fetch_array() as $k =>$v){
 		</div>
 		<?php if(!isset($_GET['mtype'])): ?>
 		<div class="form-group">
-			<label for="type">User Type</label>
+			<label for="type">Tipo de usuario</label>
 			<select name="type" id="type" class="custom-select">
 				<option value="1" <?php echo isset($meta['type']) && $meta['type'] == 1 ? 'selected': '' ?>>Administrador</option>
-				<option value="2" <?php echo isset($meta['type']) && $meta['type'] == 2 ? 'selected': '' ?>>Usuario</option>
+				<option value="2" <?php echo isset($meta['type']) && $meta['type'] == 2 ? 'selected': '' ?>>Cajero</option>
 			</select>
 		</div>
 		<?php endif; ?>

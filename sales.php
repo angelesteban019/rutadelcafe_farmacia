@@ -3,6 +3,23 @@
 	.btn{
 		background:#93ED66;
 	}
+	.btnEd{
+	
+		background:#FEC63B;
+		border:none;
+		color:white;
+
+	}
+	.btnEd:hover, .btnEd:focus {
+		color: white; /* Cambiar el color del texto al pasar el mouse o enfocar */
+	}
+
+	.btnEd:hover {
+		text-decoration: none;
+	}
+	.btnE:hover {
+		text-decoration: none;
+	}
 	</style>
 <div class="container-fluid">
 	<div class="col-lg-12">
@@ -31,7 +48,7 @@
 								while($row=$customer->fetch_assoc()):
 									$cus_arr[$row['id']] = $row['name'];
 								endwhile;
-									$cus_arr[0] = "GUEST";
+									$cus_arr[0] = "Cliente";
 
 								$i = 1;
 								$sales = $conn->query("SELECT * FROM sales_list  order by date(date_updated) desc");
@@ -43,8 +60,8 @@
 									<td class=""><?php echo $row['ref_no'] ?></td>
 									<td class=""><?php echo isset($cus_arr[$row['customer_id']])? $cus_arr[$row['customer_id']] :'N/A' ?></td>
 									<td class="text-center">
-										<a class="btnEd btn-sm btn-primary" href="index.php?page=pos&id=<?php echo $row['id'] ?>">Editar</a>
-										<a class="btnE btn-sm btn-danger delete_sales" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>">Eliminar</a>
+										<a class="btnEd btn-sm" href="index.php?page=pos&id=<?php echo $row['id'] ?>">Editar</a>
+										<a class="btnE btn-sm btn-danger delete_sales" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>">Borrar</a>
 									</td>
 								</tr>
 							<?php endwhile; ?>

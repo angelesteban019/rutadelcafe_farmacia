@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <link rel="icon" href="assets/img/logo3.png">
   <title>Drogueria La Ruta Del Café</title>
  	
 
@@ -85,7 +85,7 @@
       <div class="modal-body">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" id='submit' onclick="$('#uni_modal form').submit()">Guarda</button>
+        <button type="button" style="background:#93ED66; border:none;" class="btn " id='submit' onclick="$('#uni_modal form').submit()">Guarda</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancela</button>
       </div>
       </div>

@@ -27,6 +27,10 @@
 			margin:5%;
 			border:none;
 		}
+		.btnEditar{
+			color:white;
+			border:none;
+		}
 </style>
 <div class="container-fluid">
 	
@@ -37,7 +41,7 @@
 			<form action="" id="manage-product">
 				<div class="card">
 					<div class="card-header">
-						Formulario - Productos
+						Formulario de Productos
 				  	</div>
 					<div class="card-body">
 							<input type="hidden" name="id">
@@ -103,7 +107,7 @@
 					<div class="card-footer">
 						<div class="row">
 							<div class="col-md-12">
-								<button class="btn btn-sm btn-primary col-sm-3 offset-md-3">Guarda</button>
+								<button class="btn btn-sm col-sm-3 offset-md-3" style="background:#93ED66; border:none;">Guarda</button>
 								<button class="btn btn-sm btn-default col-sm-3" type="button" onclick="frm_reset()">Cancela</button>
 							</div>
 						</div>
@@ -175,7 +179,7 @@ while($row = $prod->fetch_assoc()) {
             <p><small><b><?php echo number_format($row['price'], 2) ?></b></small></p>
         </td>
         <td class="text-center">
-            <button class="btnE btn-sm btn-primary edit_product" type="button" data-id="<?php echo $row['id'] ?>" data-name="<?php echo $row['name'] ?>" data-sku="<?php echo $row['sku'] ?>" data-category_id="<?php echo $row['category_id'] ?>" data-description="<?php echo $row['description'] ?>" data-price="<?php echo $row['price'] ?>" data-type_id="<?php echo $row['type_id'] ?>" data-price="<?php echo $row['price'] ?>" data-measurement="<?php echo $row['measurement'] ?>" data-price="<?php echo $row['price'] ?>">Editar</button>
+            <button class="btnEditar btn-sm edit_product" type="button" data-id="<?php echo $row['id'] ?>" data-name="<?php echo $row['name'] ?>" data-sku="<?php echo $row['sku'] ?>" data-category_id="<?php echo $row['category_id'] ?>" data-description="<?php echo $row['description'] ?>" data-price="<?php echo $row['price'] ?>" data-type_id="<?php echo $row['type_id'] ?>" data-price="<?php echo $row['price'] ?>" data-measurement="<?php echo $row['measurement'] ?>" data-price="<?php echo $row['price'] ?>">Editar</button>
             <button class="btnE btn-sm btn-danger delete_product" type="button" data-id="<?php echo $row['id'] ?>">Eliminar</button>
         </td>
     </tr>
@@ -195,7 +199,11 @@ while($row = $prod->fetch_assoc()) {
 
 </div>
 <style>
-	
+	.btnEditar{
+		background:#FEC63B;
+		border:none;
+	}
+
 	td{
 		vertical-align: middle !important;
 	}

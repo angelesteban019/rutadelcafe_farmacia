@@ -143,7 +143,7 @@ if(isset($_GET['id'])){
 						</div>
 						<div class="row">
 							<div class="col-lg-12">
-								<button class="btn btn-primary col-sm-3 btn-sm btn-block float-right .col-md-3">Guarda</button>
+								<button class="btn  col-sm-3 btn-sm btn-block float-right .col-md-3">Guarda</button>
 							</div>
 						</div>
 					</div>

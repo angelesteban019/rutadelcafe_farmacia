@@ -32,7 +32,7 @@
 		</tfoot>
 	</table>
 	<div class="text-center">
-		<button class="btn btn-primary" id="confirm" type="button" onclick="confirm_order()">Confirm</button>
+		<button class="btn" id="confirm" type="button" onclick="confirm_order()">Confirm</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 
 	</div>

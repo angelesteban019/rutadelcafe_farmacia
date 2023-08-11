@@ -135,7 +135,7 @@ if(isset($_GET['id'])){
 						</div>
 						<div class="row">
 							<div class="col-lg-12">
-								<button class="btn btn-primary col-sm-3 btn-sm btn-block float-right " type="button" id="pay">Pagar</button>
+								<button class="btn col-sm-3 btn-sm btn-block float-right " type="button" id="pay">Pagar</button>
 							</div>
 						</div>
 					</div>
@@ -162,7 +162,7 @@ if(isset($_GET['id'])){
 					      	</div>
 					      </div>
 					      <div class="modal-footer">
-					        <button type="button" class="btn btn-primary" id='submit' onclick="$('#manage-sales').submit()">Pagar</button>
+					        <button type="button" class="btn " id='submit' onclick="$('#manage-sales').submit()">Pagar</button>
 					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
 					      </div>
 					      </div>
@@ -234,7 +234,7 @@ if(isset($_GET['id'])){
 		$('#pay_modal').modal('show')
 	})
 	$('#search_prod').click(function(){
-		uni_modal("Find Available Product.","find_product.php","large")
+		uni_modal("Buscar producto.","find_product.php","large")
 	})
 	$(document).ready(function(){
 		if('<?php echo isset($id) ?>' == 1){
